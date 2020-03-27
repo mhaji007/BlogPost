@@ -30,11 +30,11 @@ class PostList extends React.Component {
     }
 }
 
-const mapStateToPropos = (state) => {
+const mapStateToProps = (state) => {
     return {posts: state.posts};
 }
 
 export default connect (
-    mapStateToPropos,
+    mapStateToProps,
     {fetchPosts}
 )(PostList);
